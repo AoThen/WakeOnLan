@@ -7,6 +7,18 @@ android {
         targetSdk 33
         versionCode 110
     }
+
+    signingConfigs {
+        release {
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    
 }
 
 dependencies {
