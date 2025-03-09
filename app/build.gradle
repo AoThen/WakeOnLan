@@ -9,6 +9,18 @@ android {
     buildFeatures {
         dataBinding true
     }
+
+    signingConfigs {
+        release {
+
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
 }
 
 dependencies {
