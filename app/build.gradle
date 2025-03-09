@@ -12,7 +12,10 @@ android {
 
     signingConfigs {
         release {
-
+            keyAlias signingConfigs.debug.keyAlias
+            keyPassword signingConfigs.debug.keyPassword
+            storeFile signingConfigs.debug.storeFile
+            storePassword signingConfigs.debug.storePassword
         }
     }
     buildTypes {
